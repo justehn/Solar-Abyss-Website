@@ -1,0 +1,120 @@
+:root {
+    --primary: #e6bc34;
+    --secondary: #8f5e94;
+    --black: #000000;
+    --dark-grey: #1a1a1a;
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text-white);
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+}
+
+.hero-jumbotron {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(20, 20, 20, 0.5) 100%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+#video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: rgba(10, 10, 10, 0.95);
+    border-bottom: 2px solid var(--primary);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+    color: var(--black);
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--text-white);
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px var(--primary);
+    color: var(--black);
+}
+
+.focus-card {
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.social-link {
+    width: 120px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.player-card {
+    background-color: #111111 !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-width: 2px;
+    color: white !important;
+}
+
+.player-card .text-secondary,
+.player-card .opacity-75,
+.player-card .opacity-50 {
+    color: white !important;
+    opacity: 0.9 !important;
+}
+
+.player-img-placeholder {
+    height: 250px;
+    transition: background 0.3s ease;
+}
+
+.player-card:hover .player-img-placeholder {
+    background-color: #222 !important;
+}
+
+.product-card {
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.product-card:hover {
+    border-color: var(--secondary) !important;
+    box-shadow: 0 10px 20px rgba(143, 94, 148, 0.1);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}

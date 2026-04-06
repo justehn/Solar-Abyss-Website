@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Solar Abyss</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top shadow-none">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase tracking-wider"
+                style="font-family: 'Space Grotesk', sans-serif;" href="index.html">
+                <span class="text-primary">Solar Abyss</span> Esports
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="detail.html">Details</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="checkout.html">Checkout</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill px-4" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row mb-5 text-center">
+            <div class="col-12">
+                <h1 class="display-4 fw-bold text-uppercase" style="font-family: 'Space Grotesk', sans-serif;">
+                    Complete Your <span class="text-primary">Order</span>
+                </h1>
+                <p class="text-primary">Almost there! Your elite Solar gear is just a step away.</p>
+                <p class="text-secondary">Note: This is a mock checkout page. No real purchases will be made, and no
+                    personal info is stored.</p>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary fw-bold">Your Cart</span>
+                    <span class="badge bg-primary rounded-pill">1</span>
+                </h4>
+                <ul class="list-group mb-3 bg-dark border-secondary">
+                    <li
+                        class="list-group-item d-flex justify-content-between lh-sm bg-black text-white border-secondary">
+                        <div>
+                            <h6 class="my-0">2026 Player Jersey</h6>
+                            <small class="text-white opacity-50">Edition: Pro</small>
+                        </div>
+                        <span class="fw-bold">$59.99</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-black text-white border-secondary">
+                        <div class="text-success">
+                            <h6 class="my-0">Promo code</h6>
+                            <small>JU571N</small>
+                        </div>
+                        <span class="text-success">-$50%</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-black text-white border-secondary">
+                        <span>Total (USD)</span>
+                        <strong>$29.99</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3 fw-bold border-bottom border-secondary pb-2">Billing Details</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" id="firstName"
+                                placeholder="" value="" required>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" id="lastName"
+                                placeholder="" value="" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control bg-dark text-white border-secondary" id="email"
+                                placeholder="you@example.com">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Shipping Address</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" id="address"
+                                placeholder="1234 Main St" required>
+                        </div>
+                    </div>
+
+                    <hr class="my-4 border-secondary">
+
+                    <h4 class="mb-3 fw-bold border-bottom border-secondary pb-2">Payment</h4>
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                required>
+                            <label class="form-check-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Name on card</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" id="cc-name"
+                                placeholder="" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Card number</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" id="cc-number"
+                                placeholder="" required>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Expiration</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary"
+                                id="cc-expiration" placeholder="" required>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" id="cc-cvv"
+                                placeholder="" required>
+                        </div>
+                    </div>
+
+                    <hr class="my-4 border-secondary">
+
+                    <button class="w-100 btn btn-primary btn-lg rounded-pill fw-bold" type="submit">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 bg-black border-top border-secondary mt-5">
+        <div class="container text-center">
+            <p class="text-white opacity-50 small mb-1">&copy; Justin Martir 2026</p>
+            <p class="text-white opacity-50 small mb-0">Created for CIS 3110. Responsive Website using Bootstrap 5</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
